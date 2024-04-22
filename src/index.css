@@ -1,0 +1,157 @@
+:root{
+    --info-background: #181818;
+    --background: #222222;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fefefe;
+    font-family: "Inria Sans", sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    cursor: pointer;
+    transition: .2s all;
+    background: #C40000;    
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: .2s all;
+    box-shadow: 0 0 15px red;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    padding: 0 7%;
+}
+
+.header{
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+body{
+    background: var(--background);
+    width: 100%;
+}
+
+
+form.styled{
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px red;
+    position: relative;
+    overflow: hidden;
+}
+
+form.styled::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    background: red;
+    width: 10em;
+    height: 200%;
+    animation: borderEffect 7s linear infinite;
+}
+
+form.styled::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: #222222;
+}
+
+form.styled .form-content{
+    position: relative;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+@keyframes borderEffect {
+    0%{
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100%{
+        transform:translateX(-50%)  rotate(360deg);
+    }
+}
+
+form input, form textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    background: rgb(141, 141, 141);
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #3b3b3b;
+    font-weight: normal;
+}
+
+.form-content h3{
+    width: 100%;
+    color: red;
+    font-style: italic;
+    font-size: 40px;
+    justify-content: space-between;
+}
+
+.form-content h3 span{
+    font-size: 15px;
+    color: red;
+}
+
+.form-content label{
+    width: 100%;
+    margin-top: 2em;
+}
+
+.form-content input{
+    width: 100%;
+}
+
+.form-content button{
+    padding: 10px 20%;
+    font-size: 18px;
+    margin-top: 3em;
+}
+
+.form-content p{
+    margin: 2em 0 5em;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.material-symbols-outlined{
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.register{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #121212;
+}
+
+.register form{
+    background: #121212;
+}
+
+.register form::after{
+    background: #121212 !important;
+}
+
+.register .form-content{
+    flex-direction: column;
+    background: #121212;
+    padding: 0 20px;
+}
+
+.register .form-content label{
+    margin-top: 0.75em;
+}
+
+.register .form-content input{
+    width: 30em;
+}
+
+.register .form-content h3 span{
+    font-weight: lighter;
+}
+
+.register .form-content button{
+    margin: 1em;
+}
+
+.register .form-content p{
+    margin: 0;
+}
+
+
+@media screen and (width <= 500px) {
+    .register, .register form{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .register .form-content input{
+        width: 75vw;
+    }
+}

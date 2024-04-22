@@ -1,0 +1,30 @@
+.info{
+    background: var(--info-background);
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.info .right{
+    gap: 20px;
+}
+
+.info p{
+    padding: 3px 0;
+}
+
+.info p.flex{
+    gap: 3px;
+}
+
+@media screen and (width < 500px) {
+    .info{
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .info span{
+        font-size: 12px;
+    }
+}

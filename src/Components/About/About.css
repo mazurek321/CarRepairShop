@@ -1,0 +1,136 @@
+.about .cards{
+    justify-content: space-between;
+    text-align: center;
+    margin: 3em 0;
+    flex-wrap: wrap;
+    row-gap: 2em;
+}
+
+.about .card{
+    background: #121212;
+    width: 17em;
+    height: 20em;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about .card-content{
+    background: rgba(0, 0, 0, 0.5);
+    transition: .2s all;
+    width: 100%;
+    height: 100%;
+}
+
+.about .card h4{
+    font-weight: normal;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s all;
+}
+
+.about .card .card-hidden{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 25em;
+    transition: .2s all;
+    padding-top: 5em;
+}
+
+.about .card:hover h4{
+    top: 10%;
+    transition: .2s all;
+}
+
+.about .card:hover .card-hidden{
+    margin-top: 0;
+    transition: .2s all;
+}
+
+.about .card:hover .card-content{
+    background: rgba(0, 0, 0, 0.8);
+    transition: .2s all;
+}
+
+.about .card.workers{
+    background: url("../../assets/shutterstock_1377695117.jpg");
+    background-size: cover;
+}
+
+.about .box{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about .box > .description{
+    width: 50%;
+}
+
+.about .box > .description h4{
+    color: red;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.about .box > .description h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 0.5em 0;
+    font-weight: normal;
+}
+
+.about .box > .description p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    margin: 1em 0;
+}
+
+.about .box > .description > div{
+    gap: 1em;
+}
+
+.about .box > .description .square{
+    width: 3em;
+    height: 3em;
+    background: #121212;
+}
+
+.about .box > .description > div h3{
+    font-size: 16px;
+}
+
+.about .box > .description > div h3 span{
+    color: red;
+}
+
+@media screen and (width < 768px) {
+    .about .cards{
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .about .card{
+        width: 10em;
+        height: 12em;
+    }
+
+    .about .card h4{
+        font-size: 14px;
+    }
+
+    .about .card p{
+        font-size: 10px;
+    }
+}

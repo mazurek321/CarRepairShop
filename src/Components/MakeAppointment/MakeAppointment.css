@@ -1,0 +1,75 @@
+.make-appt{
+    background: #121212;
+    padding: 2em 0 !important;
+    margin: 5em 0 !important;
+}
+
+.make-appt form .name-info{
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+}
+
+.make-appt form .name, .make-appt form .last-name{
+    flex-direction: column;
+    width: 50%;
+} 
+
+.make-appt form{
+    background: #222222;
+}
+
+.make-appt input, .make-appt textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    background: rgb(141, 141, 141);
+}
+
+.make-appt input::placeholder, .make-appt textarea::placeholder{
+    color: #3b3b3b;
+    font-weight: normal;
+}
+
+.make-appt form label{
+    margin-top: 2em;
+    width: 100%;
+}
+
+.make-appt form label:first-child{
+    margin-top: 0;
+}
+
+.make-appt form .buttons{
+    width: 100%;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.make-appt form button{
+    padding: 10px;
+    width: 200px;
+}
+
+@media screen and (width < 500px) {
+    .make-appt form{
+        width: 95vw;
+    }
+
+    .make-appt form .name-info{
+        flex-direction: column;
+    }
+
+    .make-appt form .name,  .make-appt form .last-name{
+        width: 100%;
+    } 
+
+    .make-appt form button{
+        width: 50%;
+    }
+}

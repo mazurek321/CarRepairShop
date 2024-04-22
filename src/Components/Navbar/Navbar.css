@@ -1,0 +1,214 @@
+nav{
+    position: sticky;
+    left: 0;
+    top: -1px;
+    z-index: 10000;
+    background: var(--background);
+    border-bottom: 2px solid rgb(37, 37, 37);
+    width: 100%;
+}
+
+nav .nav-content{
+    width: 100%;
+}
+
+nav .nav-content .logo{
+    justify-content: left;
+}
+
+nav .nav-content ul{
+    justify-content:center;
+    width: 100%;
+}
+
+nav .menu-icon{
+    display: none;
+    position: relative;
+    margin: 5px 0;
+    z-index: 100000;
+}
+
+nav .side{
+    width: 15em;
+}
+
+nav .logo{
+    gap: 10px;
+    margin: 5px 0;
+}
+
+nav .logo .img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: #121212;
+    content: "";
+}
+
+nav ul{
+    gap: 3em;
+}
+
+nav ul li{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li.active, nav ul li:hover{
+    color: red;
+    transition: .2s all;
+}
+
+
+nav ul.styled li.active::before, nav ul.styled li::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    background: red;
+    border-radius: 5px;
+    width: 0;
+    height: 2px;
+    transition: .2s all;
+}
+
+nav ul.styled li.active::before{
+    width: 120%;
+}
+
+nav ul.styled li.active:hover::before, nav ul.styled li:hover::before{
+    width: 120%;  
+    transition: .2s all; 
+}
+
+nav .login-nav{
+    text-align: right;
+}
+
+nav .login-nav div span{
+    transition: 300ms all;
+}
+
+nav .login-nav div span.rotated{
+    transform: rotate(180deg);
+    transition: 300ms all;
+}
+
+nav .login-nav div{
+    justify-content: right;
+    cursor: pointer;
+    position: relative;
+}
+
+nav .login-nav .user-panel{
+    position: absolute;
+    background: #222222;
+    text-align: left;
+    left: 0;
+    top: 40px;
+    width: 120%;
+    border-radius: 5px;
+    border: 2px solid rgb(54, 54, 54);
+    border-top: none;
+    display: none;
+}
+
+nav .login-nav .user-panel ul li span{
+    font-size: 20px;
+}
+
+nav .login-nav .user-panel.show{
+    display: block;
+}
+
+nav .login-nav .user-panel ul li{
+    padding: 1em;
+    transition: 0s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 100ms all;
+}
+
+nav .login-nav .user-panel ul li:hover{
+    background: rgb(49, 49, 49);
+}
+
+nav .login-nav .user-panel ul li:hover span{
+    color: red;
+    transition: 100ms all;
+}
+
+nav .login-nav .user-panel .logout{
+    border-top: 3px solid rgb(54, 54, 54);
+    margin-top: 2em;
+}
+
+nav .login-nav button{
+    padding: 8px 50px;
+    background: #C40000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media screen and (width < 1024px) {
+    nav .nav-content{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    nav .nav-content .logo{
+        justify-content: center;
+    }
+
+    nav .nav-content.show{
+        display: block;
+    }
+
+    nav .menu-icon{
+        display: block;
+        flex: 1;
+    }
+
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .side{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    nav .login-nav{
+        width: max-content;
+        display: flex;
+        justify-content: right;
+        margin: 10px 0;
+        z-index: -1;
+    }
+
+    nav .login-nav .user-panel{
+        position: fixed;
+        width: 100vw;
+        left: 0;
+        top: 70px;
+    }
+}
+
+

@@ -1,0 +1,61 @@
+.service{
+    margin: 3em 0;
+    padding: 1em 0 5em;
+    background: #121212;
+}
+
+.service .cards{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7em;
+}
+
+.service .cards .card{
+    width: 18em;
+    height: 11em;
+    background: #222222;
+    position: relative;
+    border-radius: 5px;
+}
+
+.service .cards .card .image img{
+    width: 18em;
+    height: 11em;
+    border-radius: 5px;
+}
+
+.service .cards .card .description{
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    width: 15.5em;
+    background: #222222;
+    padding: 10px;
+}
+
+.service .cards .card .description p{
+    height: 37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+.service .cards .card .icon{
+    position: absolute;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 5px;
+    top: -1em;
+    right: -1em;
+    background: #c40000;
+}
+
+
+@media screen and (width < 1024px) {
+    .service .cards{
+        gap: 4em;
+    }
+
+}
