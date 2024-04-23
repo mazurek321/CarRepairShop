@@ -14,7 +14,7 @@ function App() {
     <div className="main">
       <BrowserRouter>
         <Routes>
-          <Route path="/CarRepairShop/" element={<Home logged={logged} userType={userType}/>}></Route>
+          <Route path="/" element={<Home logged={logged} userType={userType}/>}></Route>
           <Route path="login" element={<Login logged={logged} setLogged={setLogged}/>}></Route>
           <Route path="register" element={<Register logged={logged} setLogged={setLogged}/>}></Route>
           <Route path="user-panel" element={<UserPanel/>}></Route>
