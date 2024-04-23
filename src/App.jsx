@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
 import Home from "./Components/Home"
 import Login from "./Components/Login_Register/Login"
 import Register from "./Components/Login_Register/Register"
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="main">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home logged={logged} userType={userType}/>}></Route>
           <Route path="login" element={<Login logged={logged} setLogged={setLogged}/>}></Route>
@@ -20,7 +20,7 @@ function App() {
           <Route path="user-panel" element={<UserPanel/>}></Route>
           <Route path="all-appointments" element={<AllAppointments/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
