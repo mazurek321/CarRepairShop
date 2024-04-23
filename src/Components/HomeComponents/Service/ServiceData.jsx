@@ -1,4 +1,4 @@
-import img1 from "../../assets/img1.jpg"
+import img1 from "../../../assets/img1.jpg"
 
 export const ServiceData = [
     {

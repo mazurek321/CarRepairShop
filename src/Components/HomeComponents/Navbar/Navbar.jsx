@@ -53,7 +53,7 @@ const Navbar = (props) => {
                       <li onClick={()=>{handleButton()}}><span className="material-symbols-outlined icon">rate_review</span>Add review</li>
                       <li onClick={()=>{handleClick(props.contactRef)}}><span className="material-symbols-outlined icon">edit_calendar</span>Make appointment</li>
                       <li><span className="material-symbols-outlined icon">event</span>Your appointments</li>
-                      {props.userType==="admin"?<Link to="/user-panel/all-appointments"><li className='all_appt'><span className="material-symbols-outlined icon">calendar_month</span>All appointments</li></Link>:""}
+                      {props.userType==="admin"?<Link to="/all-appointments"><li className='all_appt'><span className="material-symbols-outlined icon">calendar_month</span>All appointments</li></Link>:""}
                       <li className='logout'><span className="material-symbols-outlined icon">logout</span>Log out</li>
                     </ul>
                   </div>

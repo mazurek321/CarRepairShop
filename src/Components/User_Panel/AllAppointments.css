@@ -1,0 +1,178 @@
+.all-apt{
+    width: 90%;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    border: 2px solid #C40000;
+    border-radius: 5px;
+    box-shadow: 0 0 5px red;
+    border-collapse: collapse;
+    background: rgb(32, 32, 32);
+}
+
+tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr{
+    width: 100%;
+    transition: 300ms all;
+}
+
+tr.active{
+    transform: scale(1.02);
+    background: rgb(44, 3, 3) !important;
+    box-shadow: 0 0 5px red;
+    transition: 300ms all;
+}
+
+td, th{
+    padding: 10px;
+}
+
+td:last-child{
+    width: 10em;
+}
+
+th{
+    background: rgb(100, 8, 8);
+    border-bottom: 2px solid #C40000;
+    position: sticky;
+    top: -1px;
+}
+
+tr:nth-child(2n){
+    background: rgb(46, 29, 29);
+}
+
+.all-apt .top{
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.all-apt .top div{
+    gap: 10px;
+}
+
+.all-apt .top div button{
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    gap: 10px;
+    opacity: 0.5;
+}
+
+.all-apt .top div button.active, .all-apt .top div button:hover{
+    opacity: 1;
+}
+
+.all-apt .top > p, .all-apt .top p span{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 200ms all;
+}
+
+.all-apt p:hover, .all-apt span:hover{
+    text-shadow: 0 0 3px red;
+    transform: scale(1.1);
+    transition: 200ms all;
+}
+
+
+.all-apt tr button{
+    padding: 10px 30px;
+}
+
+.all-apt .search{
+    background: rgb(64, 64, 64);
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 5px;
+    width: max-content;
+    padding: 3px;
+}
+
+.all-apt .search input{
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 20em;
+}
+
+.all-apt .info{
+    transform: scale(1.02);
+    transition: 300ms all;
+    box-shadow: 0 0 5px red;
+    width: 100%;
+    background: rgb(32, 19, 19);
+}
+
+.all-apt .info .top{
+    font-size: 16px;
+    align-items: start;
+    width: fit-content;
+    gap: 10em;
+    width: 100%;
+    padding: 3em 15em;
+}
+
+.all-apt .info form input, .all-apt .info form textarea{
+    width: fit-content;
+    color: #fefefe !important;
+}
+
+.all-apt .info .top .user-info{
+    text-align: left;
+}
+
+.all-apt .info .top p span{
+    color: red;
+    margin-right: 10px;
+}
+
+.all-apt .info h3{
+    margin: 10px 0;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.all-apt .info .user-desc{
+    text-align: right;
+    width: 50%;
+}
+
+.all-apt .bottom{
+    justify-content: right;
+    gap: 1em;
+}
+
+.all-apt .bottom button{
+    font-size: 12px;
+}
+
+.all-apt p input, .all-apt p textarea{
+    background: rgba(83, 83, 83, 0.5);
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+}
+
+.all-apt p textarea{
+    width: 100% !important;
+    height: 15em;
+    text-align: right;
+    line-height: 25px;
+}
+
+.all-apt p input:disabled, .all-apt p textarea:disabled{
+    background: transparent;
+}

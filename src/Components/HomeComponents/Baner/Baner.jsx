@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import "./Baner.css"
-import baner from "../../assets/baner.jpeg"
+import baner from "../../../assets/baner.jpeg"
 
 const Baner = ({contactRef}) => {
   const handleClick = () => {

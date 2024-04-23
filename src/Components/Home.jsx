@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react'
-import Info from "./Info/Info"
-import Navbar from "./Navbar/Navbar"
-import Baner from "./Baner/Baner"
-import About from "./About/About"
-import Service from "./Service/Service"
-import Reviews from "./Reviews/Reviews"
-import MakeAppointment from "./MakeAppointment/MakeAppointment"
+import Info from "./HomeComponents/Info/Info"
+import Navbar from "./HomeComponents/Navbar/Navbar"
+import Baner from "./HomeComponents/Baner/Baner"
+import About from "./HomeComponents/About/About"
+import Service from "./HomeComponents/Service/Service"
+import Reviews from "./HomeComponents/Reviews/Reviews"
+import MakeAppointment from "./HomeComponents/MakeAppointment/MakeAppointment"
 
 const Home = ({logged, userType}) => {
   const homeRef = useRef(null)

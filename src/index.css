@@ -24,6 +24,20 @@ button{
     border-radius: 5px;
 }
 
+button.edit{
+    background: rgb(46, 89, 181);
+}
+button.edit:hover{
+    box-shadow: 0 0 15px rgb(46, 89, 181);
+}
+
+button.save{
+    background: rgb(16, 109, 16);
+}
+button.save:hover{
+     box-shadow: 0 0 15px rgb(16, 109, 16);
+}
+
 button:hover{
     transform: scale(1.05);
     transition: .2s all;
