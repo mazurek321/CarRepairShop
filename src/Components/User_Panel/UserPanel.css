@@ -1,67 +1,118 @@
-.userPanel{
-    width: 100vw;
-    height: 100vh;
-    align-items: flex-start !important;
+.userPanel .left-nav{
+    background: #121212;
+    padding: 5px 0;
+    width: 20em;
+    font-weight: bold;
+    border-right: 4px solid rgb(42, 42, 42);
+}
+
+.userPanel ul li{
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.userPanel ul li:hover, .userPanel ul li.active{
+    color: red;
+    background: #222222;
+    cursor: pointer;
+}
+
+.userPanel .box{
     position: relative;
 }
 
-.userPanel .left-nav{
-    background: #121212;
-    border-right: 4px solid rgb(40, 40, 40);
-    height: 100vh;
-    width: 20em;
-}
-
-.userPanel .left-nav ul li{
-    padding: 20px 40px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.userPanel .left-nav ul li.active, .userPanel .left-nav ul li:hover{
+.userPanel .box>p{
+    position: absolute;
+    top: 10px;
+    right: 10px;
     color: red;
-    cursor: pointer;
-    background: #222222;
+}
+
+.userPanel .box>p span{
+    font-size: 14px;
+    color: red;
+}
+
+.userPanel > div{
+    height: 80vh;
+    margin-top: 10vh;
 }
 
 .userPanel .box{
     width: 100%;
-}
-
-.userPanel .logout{
-    margin-top: 100%;
-}
-
-.userPanel > p, .userPanel > p span{
-    color: red;
-}
-.userPanel > p span{
-    font-size: 14px;
-}
-
-.userPanel > p{
-    position: absolute;
-    top: 2em;
-    right: 2em;
-}
-
-.settings .left{
     background: #121212;
-    padding: 50px 30px;
+    padding: 1em;
+}
+
+
+
+/*SETTINGS-------------------------------*/
+.settings form{
+    width: 25em;
+}
+
+.settings input{
+    margin-bottom: 2em;
     width: 100%;
 }
 
-.settings .left form{
-    width: 30em;
-}
-
-.settings .left form input{
-    margin-bottom: 1em;
-}
-
 .settings form button{
-    padding: 15px 70px;
+    width: 200px;
+    padding: 15px;
+}
+
+@media screen and (width<=500px) {
+    .settings form{
+        width: 100%;
+    }
+    .settings input{
+        width: 100%;
+    }
 }
 
 
+.user-appt{
+    background: #2a2a2a;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.user-appt .top .info{
+    gap: 15px;
+    font-size: 16px; 
+    background: transparent;
+    font-weight: bold;
+    justify-content: left;
+}
+
+.user-appt span.passed{
+    color: red;
+}
+.user-appt span.comming{
+    color: rgb(3, 158, 3);
+}
+
+.user-appt .top button{
+    padding: 10px 15px;
+}
+
+.user-appt .description{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    height: 1.25em;
+}
+
+.appointments .buttons{
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.appointments .buttons button{
+    padding: 10px;
+    font-size: 20px;
+    border: 5px;
+}
 

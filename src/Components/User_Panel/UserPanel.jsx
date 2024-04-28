@@ -18,13 +18,13 @@ const UserPanel = ({userType, panelActive, setPanelActive}) => {
           <li className='logout'>Log out</li>
         </ul>
       </div>
-      <p>
-        <Link to="/" className='flex'>
-        <span className="material-symbols-outlined">arrow_back_ios</span>
-           Go back
-        </Link>
-      </p>
       <div className="box">
+        <p>
+          <Link to="/" className='flex'>
+          <span className="material-symbols-outlined">arrow_back_ios</span>
+            Go back
+          </Link>
+        </p>
         {panelActive==="settings"?<Settings/>:<Appointments/>}
       </div>
     </div>
