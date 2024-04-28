@@ -10,14 +10,16 @@ function App() {
   const [logged, setLogged] = useState(true)
   const [userType, setUserType] = useState('admin')
 
+  const [panelActive, setPanelActive] = useState("settings")
+
   return (
     <div className="main">
       <HashRouter>
         <Routes>
-          <Route path="/" element={<Home logged={logged} userType={userType}/>}></Route>
+          <Route path="/" element={<Home logged={logged} userType={userType} setPanelActive={setPanelActive}/>}></Route>
           <Route path="login" element={<Login logged={logged} setLogged={setLogged}/>}></Route>
           <Route path="register" element={<Register logged={logged} setLogged={setLogged}/>}></Route>
-          <Route path="user-panel" element={<UserPanel/>}></Route>
+          <Route path="user-panel" element={<UserPanel userType={userType} panelActive={panelActive} setPanelActive={setPanelActive}/>}></Route>
           <Route path="all-appointments" element={<AllAppointments/>}></Route>
         </Routes>
       </HashRouter>

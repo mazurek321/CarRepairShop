@@ -57,6 +57,7 @@ tr:nth-child(2n){
 
 .all-apt .top div{
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .all-apt .top div button{

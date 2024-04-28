@@ -7,7 +7,7 @@ import Service from "./HomeComponents/Service/Service"
 import Reviews from "./HomeComponents/Reviews/Reviews"
 import MakeAppointment from "./HomeComponents/MakeAppointment/MakeAppointment"
 
-const Home = ({logged, userType}) => {
+const Home = ({logged, userType, setPanelActive}) => {
   const homeRef = useRef(null)
   const aboutRef = useRef(null)
   const serviceRef = useRef(null)
@@ -29,6 +29,7 @@ const Home = ({logged, userType}) => {
             logged={logged} 
             setToggleRev={setToggleRev}
             userType={userType}
+            setPanelActive={setPanelActive}
         />
 
         <Baner contactRef={contactRef}/>

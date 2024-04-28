@@ -84,13 +84,17 @@
 }
 
 
-.reviews .box > button{
-    padding: 15px;
-    width: 250px;
-    font-size: 16px;
-    margin: 20px 0;
-    margin-left: 50%;
-    transform: translateX(-50%);
+.reviews .box .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.reviews .box .button button{
+    padding: 15px 50px;
+    width: 20%;
+    margin: 1em;
 }
 
 @media screen and (width < 768px) {
@@ -107,6 +111,10 @@
     .reviews .box .top .left h3{
         width: 100%;
     }
+
+    .reviews .box .button button{
+        width: 50%;
+    }
 }
 
 @media screen and (width < 500px) {
@@ -118,11 +126,14 @@
         width: 100%;
     }
 
+    .reviews .bottom{
+        padding: 0;
+    }
+
     .reviews .bottom .review .details .comment{
         padding: 0;
     }
 }
-
 
 
 /*----------------------ADD REVIEW--------------------- */
@@ -179,7 +190,7 @@
     width: 100%;
 }
 
-.add-review .form-content .grade{
+.add-review .form-content .grade > span{
     cursor: pointer;
 }
 

@@ -58,7 +58,7 @@
 
 @media screen and (width < 500px) {
     .make-appt form{
-        width: 95vw;
+        width: 100% !important;
     }
 
     .make-appt form .name-info{

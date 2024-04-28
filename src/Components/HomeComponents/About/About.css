@@ -133,4 +133,16 @@
     .about .card p{
         font-size: 10px;
     }
+
 }
+@media screen and (width <=375px ) {
+    .about .box .description{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .about .box{
+        justify-content: center;
+    }
+}
+

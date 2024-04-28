@@ -84,7 +84,7 @@ const Reviews = ({reviewsRef, toggleRev, setToggleRev}) => {
 
   return (
     <div className='reviews container' >
-        {toggleRev ? <AddReview setToggleRev={setToggleRev}/> : ""}
+        {toggleRev && <AddReview setToggleRev={setToggleRev}/>}
         <h3 className='header' ref={reviewsRef}>Reviews</h3>
         <div className="box">
             <div className="top flex">
@@ -101,12 +101,12 @@ const Reviews = ({reviewsRef, toggleRev, setToggleRev}) => {
             <div className="bottom">
                 {displayReviews()}
             </div>
-
-            {reviewNumber < allReviews ? 
-                <button onClick={handleButton}>View more</button> : 
-                    buttonClicked ? <button onClick={handleButton}>Hide</button> : ""
-            }
-            
+            <div className="button">
+                {reviewNumber < allReviews ? 
+                    <button onClick={handleButton}>View more</button> : 
+                        buttonClicked && <button onClick={handleButton}>Hide</button>
+                }
+            </div>
         </div>
     </div>
   )

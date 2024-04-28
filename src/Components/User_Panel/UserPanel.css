@@ -1,0 +1,67 @@
+.userPanel{
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-start !important;
+    position: relative;
+}
+
+.userPanel .left-nav{
+    background: #121212;
+    border-right: 4px solid rgb(40, 40, 40);
+    height: 100vh;
+    width: 20em;
+}
+
+.userPanel .left-nav ul li{
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.userPanel .left-nav ul li.active, .userPanel .left-nav ul li:hover{
+    color: red;
+    cursor: pointer;
+    background: #222222;
+}
+
+.userPanel .box{
+    width: 100%;
+}
+
+.userPanel .logout{
+    margin-top: 100%;
+}
+
+.userPanel > p, .userPanel > p span{
+    color: red;
+}
+.userPanel > p span{
+    font-size: 14px;
+}
+
+.userPanel > p{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+
+.settings .left{
+    background: #121212;
+    padding: 50px 30px;
+    width: 100%;
+}
+
+.settings .left form{
+    width: 30em;
+}
+
+.settings .left form input{
+    margin-bottom: 1em;
+}
+
+.settings form button{
+    padding: 15px 70px;
+}
+
+
+

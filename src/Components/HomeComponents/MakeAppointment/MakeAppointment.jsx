@@ -2,6 +2,10 @@ import React, { useRef } from 'react'
 import "./MakeAppointment.css"
 
 const MakeAppointment = ({contactRef}) => {
+    const chooseDate = () => {
+        
+    }
+
   return (
     <div className='make-appt container' ref={contactRef}>
         <h3 className='header'>Make Appointment</h3>
@@ -29,7 +33,7 @@ const MakeAppointment = ({contactRef}) => {
                 <textarea placeholder='Write your issue here (optional)'></textarea>
 
                 <div className="buttons flex">
-                    <button>Choose a date*</button>
+                    <button onClick={chooseDate}>Choose a date*</button>
                     <button>Submit</button>
                 </div>
             </div>

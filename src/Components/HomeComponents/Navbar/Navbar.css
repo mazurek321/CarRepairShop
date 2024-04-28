@@ -99,17 +99,20 @@ nav .login-nav div span.rotated{
 
 nav .login-nav div{
     justify-content: right;
-    cursor: pointer;
     position: relative;
+}
+
+nav .login-nav >div span{
+    cursor: pointer;
 }
 
 nav .login-nav .user-panel{
     position: absolute;
     background: #222222;
     text-align: left;
-    left: 0;
+    right: 0;
     top: 40px;
-    width: 120%;
+    width: 20em;
     border-radius: 5px;
     border: 2px solid rgb(54, 54, 54);
     border-top: none;

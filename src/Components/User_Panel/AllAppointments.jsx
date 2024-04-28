@@ -50,7 +50,7 @@ const AllAppointments = () => {
           }
         </td>
       </tr>
-      {displayInfo === index ? 
+      {displayInfo === index &&
         <tr className='info'>
           <td colSpan={5}>
             <form className="top flex">
@@ -64,14 +64,15 @@ const AllAppointments = () => {
                 <p><span>Time:</span>{editInfo?<input type="text" defaultValue={appt.time}/>:<input type="text" defaultValue={appt.time} disabled/>}</p>
               </div>
               <div className="user-desc">
-                {appt.description.length > 0 ? <>
-                  <h3>Description</h3> 
-                  <p>{editInfo?<textarea defaultValue={appt.description}/>:<textarea defaultValue={appt.description} disabled/>}</p>
+                {appt.description.length > 0 &&
+                   <>
+                    <h3>Description</h3> 
+                    <p>{editInfo?<textarea defaultValue={appt.description}/>:<textarea defaultValue={appt.description} disabled/>}</p>
                   </>
-                  : ""}
+                }
               </div>
             </form>
-            {theme==="all-appt"?
+            {theme==="all-appt"&&
               <div className="bottom flex">
                 {editInfo ? 
                 <>
@@ -85,10 +86,10 @@ const AllAppointments = () => {
                 </>
                 }
               </div>  
-          :""}
+          }
           </td>
         </tr>
-      : ""}
+      }
     </>
    ))
   }
