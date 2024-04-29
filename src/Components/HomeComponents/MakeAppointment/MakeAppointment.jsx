@@ -18,22 +18,40 @@ const MakeAppointment = ({contactRef}) => {
                         <input type="text" placeholder='Enter your name here'/>
                     </div>
                     <div className="last-name flex">
-                            <label htmlFor="name">Last name*</label>
+                            <label htmlFor="lastname">Last name*</label>
                             <input type="text" placeholder='Enter your last name here'/>
                     </div>
                 </div>
                 
-                <label htmlFor="name">Email*</label>
+                <label htmlFor="email">Email*</label>
                 <input type="text" placeholder='Enter your email here'/>
 
-                <label htmlFor="name">Phone number*</label>
+                <label htmlFor="number">Phone number*</label>
                 <input type="text" placeholder='Enter your phone number here'/>
 
-                <label htmlFor="name">Description</label>
+                <label htmlFor="desc">Description</label>
                 <textarea placeholder='Write your issue here (optional)'></textarea>
 
+                <div className="date-time flex">
+                    <div className="date">
+                        <label htmlFor="date">Date*</label>
+                        <input type="date" />
+                    </div>
+
+                    <div className="time">
+                        <label htmlFor="date">Time*</label>
+                        <select>
+                            <option value="8:45">8:45</option>
+                            <option value="12:00" className='taken' disabled>12:00</option>
+                            <option value="17:15">17:15</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+
                 <div className="buttons flex">
-                    <button onClick={chooseDate}>Choose a date*</button>
                     <button>Submit</button>
                 </div>
             </div>

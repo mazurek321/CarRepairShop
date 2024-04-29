@@ -29,7 +29,7 @@ const Navbar = (props) => {
         <span className="material-symbols-outlined menu-icon" onClick={()=>{setToggle(t=>t=!t)}}>menu</span>
 
         <div className={`nav-content flex ${toggle?"show":""}`}>
-          <div className="logo flex side">
+          <div className="logo flex side" onClick={()=>handleClick(props.homeRef)}>
               <div className="img"></div>
               <h3>Car repair</h3>
           </div>

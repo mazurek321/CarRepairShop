@@ -4,7 +4,7 @@ nav{
     top: -1px;
     z-index: 10000;
     background: var(--background);
-    border-bottom: 2px solid rgb(37, 37, 37);
+    box-shadow: 0 5px 15px black;
     width: 100%;
 }
 
@@ -35,6 +35,7 @@ nav .side{
 nav .logo{
     gap: 10px;
     margin: 5px 0;
+    cursor: pointer;
 }
 
 nav .logo .img{

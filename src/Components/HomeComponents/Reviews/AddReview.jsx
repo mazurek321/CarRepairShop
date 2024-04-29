@@ -3,9 +3,15 @@ import "./Reviews.css"
 
 const AddReview = ({setToggleRev}) => {
     const [stars, setStars] = useState(0)
+    const [tempStars, setTempStars] = useState(0)
     const reviewBox = useRef()
     const handleClick = (e) => {
         e.target==reviewBox.current && setToggleRev(false)
+    }
+
+    const handleGrade=(rating)=>{
+        setStars(rating)
+        console.log(rating)
     }
 
   return (
@@ -24,12 +30,12 @@ const AddReview = ({setToggleRev}) => {
                     <textarea placeholder='Leave a comment'></textarea>
 
                     <label>Grade*</label>
-                    <div className="grade">
-                        <span className="material-symbols-outlined icon">grade</span>
-                        <span className="material-symbols-outlined icon">grade</span>
-                        <span className="material-symbols-outlined icon">grade</span>
-                        <span className="material-symbols-outlined icon">grade</span>
-                        <span className="material-symbols-outlined icon">grade</span>
+                    <div className="grades">
+                        <span className={`material-symbols-outlined ${[1,2,3,4,5].includes(stars) && "active"}`} onClick={()=>handleGrade(1)}>grade</span>
+                        <span className={`material-symbols-outlined ${[2,3,4,5].includes(stars) && "active"}`}  onClick={()=>handleGrade(2)}>grade</span>
+                        <span className={`material-symbols-outlined ${[3,4,5].includes(stars) && "active"}`}  onClick={()=>handleGrade(3)}>grade</span>
+                        <span className={`material-symbols-outlined ${[4,5].includes(stars) && "active"}`}  onClick={()=>handleGrade(4)}>grade</span>
+                        <span className={`material-symbols-outlined ${[5].includes(stars) && "active"}`}  onClick={()=>handleGrade(5)}>grade</span>
                     </div>
                     <button>Submit</button>
                 </div>

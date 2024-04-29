@@ -1,0 +1,28 @@
+.footer{
+    background: rgb(10, 10, 10);
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer > div{
+    width: 100%;
+    text-align: center;
+}
+
+.footer h3{
+    color: red;
+    font-size: 24px;
+    text-shadow: 0 0 1px white;
+}
+
+.footer h2{
+    text-shadow: 0 0 5px red;
+}
+
+.footer .right li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    justify-content: center;
+}

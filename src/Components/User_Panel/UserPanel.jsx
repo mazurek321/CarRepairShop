@@ -5,14 +5,16 @@ import Appointments from "./Appointments"
 import { Link } from 'react-router-dom'
 
 
-const UserPanel = ({userType, panelActive, setPanelActive}) => {
+const UserPanel = ({userType, setToggleRev, panelActive, setPanelActive}) => {
   return (
     <div className='userPanel flex'>
       <div className="left-nav">
         <ul>
           <li className={`${panelActive==='settings'&&'active'}`} onClick={()=>{setPanelActive("settings")}}>Settings</li>
-          <li>Add review</li>
-          <li>Make appointment</li>
+          <Link to="/"><li onClick={()=>{
+            setToggleRev(true)
+          }}>Add review</li></Link>
+
           <li className={`${panelActive==='appointments'&&'active'}`} onClick={()=>{setPanelActive("appointments")}}>Your appointments</li>
           {userType==="admin"&&<Link to="/all-appointments"><li>All appointments</li></Link>}
           <li className='logout'>Log out</li>

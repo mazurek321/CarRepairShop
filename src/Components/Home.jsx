@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 import Info from "./HomeComponents/Info/Info"
 import Navbar from "./HomeComponents/Navbar/Navbar"
 import Baner from "./HomeComponents/Baner/Baner"
@@ -6,16 +6,10 @@ import About from "./HomeComponents/About/About"
 import Service from "./HomeComponents/Service/Service"
 import Reviews from "./HomeComponents/Reviews/Reviews"
 import MakeAppointment from "./HomeComponents/MakeAppointment/MakeAppointment"
+import Footer from './HomeComponents/Footer/Footer'
 
-const Home = ({logged, userType, setPanelActive}) => {
-  const homeRef = useRef(null)
-  const aboutRef = useRef(null)
-  const serviceRef = useRef(null)
-  const reviewsRef = useRef(null)
-  const contactRef = useRef(null)
-
-  const [toggleRev, setToggleRev] = useState(false)
-
+const Home = ({logged, userType, setToggleRev, toggleRev, setPanelActive, homeRef, aboutRef, serviceRef, reviewsRef, contactRef}) => {
+  
   return (
     <>
         <Info homeRef={homeRef} />
@@ -36,8 +30,9 @@ const Home = ({logged, userType, setPanelActive}) => {
         
         <About aboutRef={aboutRef}/>
         <Service serviceRef={serviceRef}/>
-        <Reviews reviewsRef={reviewsRef} toggleRev={toggleRev} setToggleRev={setToggleRev}/>
+        <Reviews reviewsRef={reviewsRef} toggleRev={toggleRev} setToggleRev={setToggleRev} />
         <MakeAppointment contactRef={contactRef}/>
+        <Footer/>
     </>
   )
 }

@@ -186,17 +186,21 @@
     margin-top: 2em;
 }
 
-.add-review .form-content label, .add-review .form-content .grade{
+.add-review .form-content label, .add-review .form-content .grades{
     width: 100%;
 }
 
-.add-review .form-content .grade > span{
+.add-review .form-content .grades > span{
     cursor: pointer;
 }
 
 .add-review .form-content button{
     padding: 10px 20%;
     margin-top: 2em;
+}
+
+.add-review .grades .active{
+    color: red;
 }
 
 @media screen and (width <= 1024px) {

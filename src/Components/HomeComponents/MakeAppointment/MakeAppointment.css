@@ -4,13 +4,15 @@
     margin: 5em 0 !important;
 }
 
-.make-appt form .name-info{
+.make-appt form .name-info, .make-appt form .date-time{
     justify-content: space-around;
     gap: 1em;
     width: 100%;
 }
 
-.make-appt form .name, .make-appt form .last-name{
+.make-appt form .name, .make-appt form .last-name,
+.make-appt form .date, .make-appt form .time
+{
     flex-direction: column;
     width: 50%;
 } 
@@ -19,7 +21,7 @@
     background: #222222;
 }
 
-.make-appt input, .make-appt textarea{
+.make-appt input, .make-appt textarea, .make-appt select{
     width: 100%;
     resize: none;
     padding: 10px;
@@ -37,7 +39,7 @@
 }
 
 .make-appt form label{
-    margin-top: 2em;
+    margin-top: 1em;
     width: 100%;
 }
 
@@ -53,7 +55,22 @@
 
 .make-appt form button{
     padding: 10px;
-    width: 200px;
+    width: 450px;
+}
+
+.make-appt .date-time{
+    margin-top: 20px;
+}
+
+.make-appt .date-time option{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.make-appt option.taken{
+    color: red;
+    text-decoration: line-through;
 }
 
 @media screen and (width < 500px) {
