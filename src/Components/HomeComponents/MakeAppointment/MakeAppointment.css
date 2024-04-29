@@ -85,8 +85,4 @@
     .make-appt form .name,  .make-appt form .last-name{
         width: 100%;
     } 
-
-    .make-appt form button{
-        width: 50%;
-    }
 }

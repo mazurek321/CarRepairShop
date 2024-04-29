@@ -26,3 +26,10 @@
     margin-top: 5px;
     justify-content: center;
 }
+
+@media screen and (width<=375px) {
+    .footer{
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+}

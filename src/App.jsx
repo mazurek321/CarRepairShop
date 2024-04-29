@@ -7,8 +7,8 @@ import AllAppointments from "./Components/User_Panel/AllAppointments"
 import { useState, useRef } from "react"
 
 function App() {
-  const [logged, setLogged] = useState(true)
-  const [userType, setUserType] = useState('admin')
+  const [logged, setLogged] = useState(false)
+  const [userType, setUserType] = useState('user')
 
   const [panelActive, setPanelActive] = useState("settings")
   const [toggleRev, setToggleRev] = useState(false)
