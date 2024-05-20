@@ -6,7 +6,7 @@ export const AllAppointmentsData = [
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
-        description: "Opisik jakis czy cuś"
+        description: "Opisik"
     },
     {
         name: "Grzegorz",
@@ -15,7 +15,7 @@ export const AllAppointmentsData = [
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
-        description: "Opisik jakis czy cuś Opisik jakis czy cuśOpisik jakis czy cuśOpisik jakis czy cuśOpisik jakis czy cuśOpisik jakis czy cuśOpisik jakis czy cuś"
+        description: "Opis"
     },
     {
         name: "Grzegorz",

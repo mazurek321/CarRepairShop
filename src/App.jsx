@@ -8,7 +8,7 @@ import { useState, useRef } from "react"
 
 function App() {
   const [logged, setLogged] = useState(false)
-  const [userType, setUserType] = useState('user')
+  const [userType, setUserType] = useState('admin')
 
   const [panelActive, setPanelActive] = useState("settings")
   const [toggleRev, setToggleRev] = useState(false)

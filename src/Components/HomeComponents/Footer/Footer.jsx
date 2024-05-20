@@ -7,12 +7,12 @@ const Footer = () => {
         <div className="left">
             <h3>Services</h3>
             <ul>
-                <li>Service 1</li>
-                <li>Service 2</li>
-                <li>Service 3</li>
-                <li>Service 4</li>
-                <li>Service 5</li>
-                <li>Service 6</li>
+                <li>Car exterior detailing</li>
+                <li>Car interior detailing</li>
+                <li>Paint correction</li>
+                <li>Engine diagnostic and repair</li>
+                <li>Electrical system repair</li>
+                <li>Suspension and brake services</li>
             </ul>
         </div>
         <div className="middle">

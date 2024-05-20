@@ -14,7 +14,10 @@ const Baner = ({contactRef}) => {
         </div>
         <div className="content container">
             <h3>Car repair shop</h3>
-            <p>Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie w internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w budowie. Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie (humorystyczne wstawki itd).</p>
+            <p>From routine maintenance to complex repairs, we offer a comprehensive range of services designed to meet
+               all your automotive needs. Whether it's a simple oil change, brake repair, engine diagnostics, or any other
+                service, we use state-of-the-art equipment and high-quality parts to deliver outstanding results. We pride
+                 ourselves on our transparency, integrity, and dedication to customer satisfaction.</p>
             <button onClick={handleClick}>make appointment</button>
         </div>
     </div>

@@ -2,46 +2,27 @@ import img from "../../../assets/user.png"
 
 export const ReviewsData = [
     {
-        userName: "Mietek z Poznania",
+        userName: "Anna Kowalska",
         grade: 5,
-        comment: "",
+        comment: "Szybka i profesjonalna obsługa, zdecydowanie polecam!",
         img: img
     },
     {
-        userName: "Mietek z Poznania",
-        grade: 2,
-        comment: "Gówno warsztat",
-        img: img
-    },
-    {
-        userName: "Mietek z Poznania",
+        userName: "Jan Nowak",
         grade: 4,
-        comment: "Kupie kserokopiarke. A tu przepis na naleśniki : Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania patelni przed smażeniem każdego naleśnika). Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.",
+        comment: "Rzetelnie wykonana naprawa, ale mogłoby być trochę taniej.",
         img: img
     },
     {
-        userName: "Mietek z Poznania",
-        grade: 5,
-        comment: "Kupie kserokopiarke. A tu przepis na naleśniki : Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania patelni przed smażeniem każdego naleśnika). Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.",
-        img: img
-    },
-    {
-        userName: "Mietek z Poznania",
-        grade: 2,
-        comment: "Gówno warsztat",
-        img: img
-    },
-    {
-        userName: "Mietek z Poznania",
+        userName: "Tomasz Zieliński",
         grade: 4,
-        comment: "Kupie kserokopiarke. A tu przepis na naleśniki : Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania patelni przed smażeniem każdego naleśnika). Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.",
+        comment: "Dobra naprawa, ale czas oczekiwania był zbyt długi.",
         img: img
     },
     {
-        userName: "Mietek z Poznania",
+        userName: "Agnieszka Krawczyk",
         grade: 5,
-        comment: "Kupie kserokopiarke. A tu przepis na naleśniki : Mąkę wsypać do miski, dodać jajka, mleko, wodę i sól. Zmiksować na gładkie ciasto. Dodać roztopione masło lub olej roślinny i razem zmiksować (lub wykorzystać tłuszcz do smarowania patelni przed smażeniem każdego naleśnika). Naleśniki smażyć na dobrze rozgrzanej patelni z cienkim dnem np. naleśnikowej. Przewrócić na drugą stronę gdy spód naleśnika będzie już ładnie zrumieniony i ścięty.",
+        comment: "Jestem bardzo zadowolona z usług tego warsztatu. Obsługa była szybka i profesjonalna, a mechanicy wykazali się dużą wiedzą i doświadczeniem. Samochód został naprawiony w krótkim czasie, a cena była bardzo przystępna w porównaniu do innych warsztatów w okolicy. Dodatkowo, pracownicy byli bardzo uprzejmi i cierpliwie odpowiadali na wszystkie moje pytania. Na pewno wrócę tu przy kolejnej potrzebie naprawy samochodu i polecam ten warsztat każdemu, kto szuka rzetelnego serwisu.",
         img: img
     }
-    
 ]
