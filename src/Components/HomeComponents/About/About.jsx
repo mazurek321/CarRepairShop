@@ -72,7 +72,7 @@ const About = ({aboutRef}) => {
                     <img src={img5} />
                     <h4>Aleksandra</h4>
                     <div className="card-hidden">
-                        <p>Is the owner of the car repair shop, with 20 years of experience in the automotive industry. He oversees the operations and ensures the quality of all services provided.</p>
+                        <p>Is the owner of the car repair shop, with 20 years of experience in the automotive industry. She oversees the operations and ensures the quality of all services provided.</p>
                     </div>
                 </div>
             </div>
