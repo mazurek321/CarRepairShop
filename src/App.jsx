@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import Home from "./Components/Home"
 import Login from "./Components/Login_Register/Login"
 import Register from "./Components/Login_Register/Register"
@@ -7,8 +7,18 @@ import AllAppointments from "./Components/User_Panel/AllAppointments"
 import { useState, useRef } from "react"
 
 function App() {
-  const [logged, setLogged] = useState(false)
+  const [logged, setLogged] = useState(true)
   const [userType, setUserType] = useState('admin')
+
+  const [apptData, setApptData] = useState({
+    name: "",
+    lastname:"",
+    email: "",
+    phone:"",
+    description:"",
+    date:"",
+    time:"",
+  })
 
   const [panelActive, setPanelActive] = useState("settings")
   const [toggleRev, setToggleRev] = useState(false)
@@ -32,6 +42,8 @@ function App() {
                                          contactRef={contactRef}
                                          setToggleRev={setToggleRev}
                                          toggleRev={toggleRev}
+                                         apptData={apptData}
+                                         setApptData={setApptData}
                                          />}></Route>
           <Route path="login" element={<Login logged={logged} setLogged={setLogged}/>}></Route>
           <Route path="register" element={<Register logged={logged} setLogged={setLogged}/>}></Route>

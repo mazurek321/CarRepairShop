@@ -8,7 +8,7 @@ import Reviews from "./HomeComponents/Reviews/Reviews"
 import MakeAppointment from "./HomeComponents/MakeAppointment/MakeAppointment"
 import Footer from './HomeComponents/Footer/Footer'
 
-const Home = ({logged, userType, setToggleRev, toggleRev, setPanelActive, homeRef, aboutRef, serviceRef, reviewsRef, contactRef}) => {
+const Home = ({logged, userType, setToggleRev, toggleRev, setPanelActive, homeRef, aboutRef, serviceRef, reviewsRef, contactRef, apptData, setApptData}) => {
   
   return (
     <>
@@ -31,7 +31,7 @@ const Home = ({logged, userType, setToggleRev, toggleRev, setPanelActive, homeRe
         <About aboutRef={aboutRef}/>
         <Service serviceRef={serviceRef}/>
         <Reviews reviewsRef={reviewsRef} toggleRev={toggleRev} setToggleRev={setToggleRev} />
-        <MakeAppointment contactRef={contactRef}/>
+        <MakeAppointment contactRef={contactRef} apptData={apptData} setApptData={setApptData}/>
         <Footer/>
     </>
   )

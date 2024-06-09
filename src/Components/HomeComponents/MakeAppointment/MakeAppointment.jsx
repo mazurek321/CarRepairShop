@@ -1,11 +1,21 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./MakeAppointment.css"
 
-const MakeAppointment = ({contactRef}) => {
-    const chooseDate = () => {
-        
-    }
+const MakeAppointment = ({contactRef, apptData, setApptData}) => {
 
+    useEffect(()=>{
+        setApptData({
+            name: "",
+            lastname:"",
+            email: "",
+            phone:"",
+            description:"",
+            date:"",
+            time:"",
+        })
+    }, [])
+
+    
   return (
     <div className='make-appt container' ref={contactRef}>
         <h3 className='header'>Make Appointment</h3>
@@ -15,19 +25,19 @@ const MakeAppointment = ({contactRef}) => {
                 <div className="name-info flex">
                     <div className="name flex">
                         <label htmlFor="name">Name*</label>
-                        <input type="text" placeholder='Enter your name here'/>
+                        <input type="text" defaultValue={apptData.name} placeholder='Enter your name here'/>
                     </div>
                     <div className="last-name flex">
                             <label htmlFor="lastname">Last name*</label>
-                            <input type="text" placeholder='Enter your last name here'/>
+                            <input type="text" defaultValue={apptData.lastname} placeholder='Enter your last name here'/>
                     </div>
                 </div>
                 
                 <label htmlFor="email">Email*</label>
-                <input type="text" placeholder='Enter your email here'/>
+                <input type="text" defaultValue={apptData.email} placeholder='Enter your email here'/>
 
                 <label htmlFor="number">Phone number*</label>
-                <input type="text" placeholder='Enter your phone number here'/>
+                <input type="text" defaultValue={apptData.phone} placeholder='Enter your phone number here'/>
 
                 <label htmlFor="desc">Description</label>
                 <textarea placeholder='Write your issue here (optional)'></textarea>
@@ -47,9 +57,6 @@ const MakeAppointment = ({contactRef}) => {
                         </select>
                     </div>
                 </div>
-
-
-
 
                 <div className="buttons flex">
                     <button>Submit</button>
