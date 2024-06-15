@@ -2,7 +2,7 @@ export const AllAppointmentsData = [
     {
         name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
@@ -11,7 +11,7 @@ export const AllAppointmentsData = [
     {
         name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
@@ -20,7 +20,7 @@ export const AllAppointmentsData = [
     {
         name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
