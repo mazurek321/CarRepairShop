@@ -1,35 +1,35 @@
 export const HistoryData = [
     {
-        name: "Grzegorzus",
+        name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
         description: "Opisik"
     },
     {
-        name: "Grzegorzel",
+        name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
         description: "Opisik"
     },
     {
-        name: "Grzegorzyna",
+        name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
         description: ""
     },
     {
-        name: "Grzegorzycel",
+        name: "Grzegorz",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "grze@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
@@ -38,7 +38,7 @@ export const HistoryData = [
     {
         name: "Paweł",
         lastname: "Brzeczyszczykiewicz",
-        email: "boczus2137@wp.pl",
+        email: "paw@wp.pl",
         phone: "667-668-669",
         date: "08-12-2028",
         time: "8:45",
