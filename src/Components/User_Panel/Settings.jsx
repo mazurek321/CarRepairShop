@@ -8,13 +8,13 @@ const Settings = () => {
         <div className="left">
           <form>
             <label>Name</label><br/>
-            <input type="text" defaultValue={"Mietek"}/><br/>
+            <input type="text" defaultValue={"Aleksandra"}/><br/>
             <label>Last name</label><br/>
-            <input type="text" defaultValue={"Mietek"}/><br/>
+            <input type="text" defaultValue={"Rokita"}/><br/>
             <label>Email</label><br/>
-            <input type="text" defaultValue={"Mietek@mietland.pl"}/><br/>
+            <input type="text" defaultValue={"rakieta@gmail.pl"}/><br/>
             <label>Phone number</label><br/>
-            <input type="text" defaultValue={"007 007 007"}/><br/>
+            <input type="text" defaultValue={"006 007 008"}/><br/>
             <button>Save</button>
           </form>
         </div>
