@@ -47,7 +47,7 @@ const Navbar = (props) => {
             {props.logged ? 
               <div className='flex' 
                  onClick={()=>{setUserToggle(u=>u=!u)}}> 
-                 <span>UserName UserLastName</span>
+                 <span>Aleksandra Rokita</span>
                  <span className=
                         {`material-symbols-outlined icon ${userToggle&&"rotated"}`}>
                         expand_more
