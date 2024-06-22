@@ -1,15 +1,15 @@
 import React, { useRef } from 'react'
 import "./About.css"
-import img1 from "../../../assets/1.jpg"
-import img2 from "../../../assets/2.jpg"
-import img3 from "../../../assets/3.jpg"
-import img4 from "../../../assets/4.jpg"
-import img5 from "../../../assets/5.jpg"
+import img1 from "../../../assets/b.png"
+import img2 from "../../../assets/p.png"
+import img3 from "../../../assets/k.png"
+import img4 from "../../../assets/k1.webp"
+import img5 from "../../../assets/o.png"
 
 const About = ({aboutRef}) => {
 
   return (
-    <div className='about container' ref={aboutRef}>
+    <div className={`about container ${theme&&'light'}`} ref={aboutRef}>
         <h3 className='header'>About us</h3>
 
         <div className="cards flex">
@@ -18,7 +18,7 @@ const About = ({aboutRef}) => {
                     <img src={img1} />
                     <h4>Bartłomiej</h4>
                     <div className="card-hidden">
-                        <p>Manages customer service and office administration. He coordinates appointments, handles customer inquiries, and ensures that the administrative side of the shop runs smoothly.</p>
+                        <p>Manages customer service and office administration. He coordinates appointments, handles customer inquiries, and ensures that the administrative side of the shop runs smoothly.<br/><span>[Frontend developer]</span></p>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ const About = ({aboutRef}) => {
                     <img src={img2} />
                     <h4>Paweł</h4>
                     <div className="card-hidden">
-                        <p>Is the lead mechanic specializing in engine repairs and maintenance. He is known for his expertise in troubleshooting complex engine issues and providing efficient solutions.</p>
+                        <p>Is the lead mechanic specializing in engine repairs and maintenance. He is known for his expertise in troubleshooting complex engine issues and providing efficient solutions.<br/><span>[Tech leader]</span></p>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ const About = ({aboutRef}) => {
                     <img src={img3} />
                     <h4>Kacper</h4>
                     <div className="card-hidden">
-                        <p>Is the diagnostic expert in the shop. He uses advanced computer systems to diagnose vehicle problems accurately and quickly, ensuring that every car receives the precise repair it needs.</p>
+                        <p>Is the diagnostic expert in the shop. He uses advanced computer systems to diagnose vehicle problems accurately and quickly, ensuring that every car receives the precise repair it needs.<br/><span>[Backend developer]</span></p>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const About = ({aboutRef}) => {
                     <img src={img4} />
                     <h4>Konrad</h4>
                     <div className="card-hidden">
-                        <p>Handles all electrical and electronic repairs. From fixing wiring issues to installing new electronic systems, he ensures that the electrical components of vehicles function perfectly.</p>
+                        <p>Handles all electrical and electronic repairs. From fixing wiring issues to installing new electronic systems, he ensures that the electrical components of vehicles function perfectly.<br/><span>[Tester]</span></p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ const About = ({aboutRef}) => {
                     <img src={img5} />
                     <h4>Aleksandra</h4>
                     <div className="card-hidden">
-                        <p>Is the owner of the car repair shop, with 20 years of experience in the automotive industry. She oversees the operations and ensures the quality of all services provided.</p>
+                        <p>Is the owner of the car repair shop, with 20 years of experience in the automotive industry. She oversees the operations and ensures the quality of all services provided.<br/><span>[Project manager]</span></p>
                     </div>
                 </div>
             </div>
