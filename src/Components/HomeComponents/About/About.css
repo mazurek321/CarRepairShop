@@ -1,3 +1,7 @@
+.about.light{
+    background: #EEE2DE;
+}
+
 .about .cards{
     justify-content: space-between;
     text-align: center;
@@ -15,12 +19,20 @@
     position: relative;
 }
 
+.about.light .card{
+    background: #EEE2DE;
+}
+
 .about .card-content{
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(17, 13, 13, 0.5);
     transition: .2s all;
     width: 100%;
     height: 100%;
     text-align: center;
+}
+
+.about.light .card-content{
+    background: #EEE2DE;
 }
 
 .about .card h4{
@@ -53,17 +65,27 @@
     transition: .2s all;
 }
 
+.about .card .card-hidden span{
+    color: red;
+    margin-top: 2px;
+}
+
 .about .card:hover .card-content{
     background: rgba(0, 0, 0, 0.8);
     transition: .2s all;
 }
 
+.about.light .card:hover .card-content{
+    background: red;
+}
+
 .about .card img{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     left: 0;
     top: 0;
+    padding: 20px;
     opacity: 0.3;
 }
 
