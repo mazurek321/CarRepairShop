@@ -9,7 +9,7 @@ import img5 from "../../../assets/o.png"
 const About = ({aboutRef}) => {
 
   return (
-    <div className={`about container ${theme&&'light'}`} ref={aboutRef}>
+    <div className='about container' ref={aboutRef}>
         <h3 className='header'>About us</h3>
 
         <div className="cards flex">
